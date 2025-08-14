@@ -42,6 +42,19 @@ The dataset includes 4 tables with the following information:
 - **Delivery_Charges:** Additional delivery fees applied to the order. (Type: Numeric)
 - **Coupon_Status:** Denotes whether a discount coupon was applied during the transaction. (Type: Categorical (Used, Not Used, Clicked))
 
+## 3. Data Profiling
+Do 
+```
+merged_df = pd.merge(sales_df_cleaned, customer_df, on='CustomerID', how='left')
+
+# Extract the month from the 'Transaction_Date' in the merged_df
+merged_df['Month'] = merged_df['Transaction_Date'].dt.strftime('%b') # Extracting abbreviated month name
+
+# Merge the dataframe with discount_df on 'Product_Category' and 'Month'
+final_df = pd.merge(merged_df, discount_df, on=['Product_Category', 'Month'], how='left')
+
+final_df.head()
+```
 
 ## Key Findings
 ### Sales Trends & Seasonality
