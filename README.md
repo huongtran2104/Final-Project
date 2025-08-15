@@ -87,16 +87,18 @@ final_df.head()
 - May & June → lowest profitability.
 The revenue of the company fluctuated depending on the seasonal factors
 - Peak revenue months (Nov, Dec): Driven by holidays and demand for high-value products.
-> **Strategy:** Launch targeted holiday campaigns, offer premium bundles, and ensure strong inventory planning.
 - Feb, May and June had low revenue. However, each month shows different purchasing patterns of customers: 
   - Feb: This month had a small but highly loyal customer base that made frequent and high-value purchases.
   - May: Sales came from a larger number of customers compared to Feb, but spending per purchase was smaller, and purchase frequency dropped.
   - Jun: Large reach in terms of unique customers, but low engagement — many customers made only once or few purchases.
-but the purchase frequency is relatively high: Likely due to repeat purchases of low-priced items bought by a small to high customer number.
-> **Strategy:** Use volume discounts, product bundling, and cross-selling to boost average transaction value.
 ### Product tiers performance
 - High-tier products dominate revenue but are heavily skewed toward year-end months.
-- Mid-tier products fluctuate, peaking in April; low-tier products remain stable but with low contribution.
+- Mid-tier products fluctuate, peaking in April.
+- Low-tier products remain stable but with low contribution.
+- In April, both mid- and low-tier sales reach their annual peak, while high-tier sales are low.
+> **Problem:** Over-reliance on high-tier products. Sales could grow significantly by boosting all tiers.
+
+> **Job-to-be-Done:** Achieve balanced growth across tiers by identifying key products to prioritize and low-impact products to phase out.
 ### Product Category Insights
 - Highest volume categories: Apparel, Nest-USA, Office.
 - Lowest volume categories: Gift Cards, Housewares, Android.
@@ -105,15 +107,19 @@ but the purchase frequency is relatively high: Likely due to repeat purchases of
 - Housewares category: low sales but high quantity sold → potential for premium positioning via limited editions or innovations.
 
 # Recommendations
-## Product Strategy
-- Focus on premium product programs for high-value items.
-- Apply discounts and bulk deals for mid-tier products to drive quantity sales.
-- Reposition low-tier products with creative bundles or niche targeting.
-## Marketing Investment
-- Increase marketing spend in months with historically high responsiveness (Nov–Dec).
-- Implement targeted campaigns in low-sales months to reduce seasonality gaps.
+## Product Strategies:
+- Have retaining activities or loyalty programs for VVIP customers who purchase high-tier products.
+- Apply discounts, bulk deals and loyalty programs for mid-tier products to drive quantity sales. 
+- Reposition low-tier products with new product developments, limited edition to trigger the engagement. For example Housewares is low tier categories, but engaged high quantity purchased. Then the company can innovate the product to increase the engagement of customers.
+## Pricing Strategies:
+- **Value-based pricing strategies:** applied for high tier products by giving more exclusive or premium services.
+- **Discount and bulk pricing options:** applied for mid tier products to increase the basket size of each transaction
+## Promotion Strategies:
+- Apply seasonal marketing campaign in high sales month (Nov-Dec-Jan), offer premium bundles to maximize the sales, and ensure strong inventory planning.
+- Use volume discounts, product bundling, and cross-selling to boost average transaction value.
 ## Category Optimization
 - Prioritize high-profit categories like Nest-USA and Apparel in advertising.
-- Phase out or rebrand underperforming categories (e.g., Waze, Android) unless strategic for brand image.
+- 
+- Consider to remove or rebrand Android product categories to save the cost and focus on more profitable categories.
 # Limitations
 - Lack of information related to the market growth rate of each product categories. Otherwise, I can suggest comprehensive strategies to  
