@@ -43,7 +43,32 @@ The dataset includes 4 tables with the following information:
 - **Coupon_Status:** Denotes whether a discount coupon was applied during the transaction. (Type: Categorical (Used, Not Used, Clicked))
 
 ## 3. Data Profiling
-Do 
+### 3.1. Data cleaning
+Before moving on to the EDA analysis and visualization, the data need to be cleaned and qualified. Then, I implemented following steps:
+
+- Get a brief descriptive statistics
+- Fix the datatypes
+- Remove duplicates
+- Detect outliers
+- Check the consistency
+
+**PROBLEM in data cleaning:**
+After detecting the outliers by using upper bound/lower bound, I found that in this dataset, there were huge numbers of outliers. These outliers come from 2 factors:
+- high price product categories
+- numbers of bulk purchases
+The ignorance of these outliers may lead to inaccuracy in evaluating the total sales performance. Therefore, instead of eliminating all the values that higher than the upper_bound, I use the following techniques to minimize the effect of outliers:
+1. Filter the quantile 0.99 of columns that have outliers.
+2. Divide sub-groups: For further analysis, instead of analyze the whole dataset, I divide the product categories into sub-groups depending on their price call "tier". To identify the benchmark of each tier, there are 2 steps:
+    - First, mathematically divide the product categories by 3 according to the averge price of each categories to have 3 equal sub-groups.
+    - Then, adjust the list in each group by intuitive reasoning.
+ 
+  As the result I identify 3 product tiers:
+    - Low-tier: Product categories with avg_price lower than $15
+    - Mid-tier: Product categories with avg_price from $15 to $100
+    - High-tier: Product categories with avg_price higher than $100
+
+### 3.2. Data Qualifying
+
 ```
 merged_df = pd.merge(sales_df_cleaned, customer_df, on='CustomerID', how='left')
 
