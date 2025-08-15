@@ -60,6 +60,16 @@ final_df.head()
 ### Sales Trends & Seasonality
 - November & December → highest sales (holiday-driven).
 - May & June → lowest profitability.
+The revenue of the company fluctuated depending on the seasonal factors
+- Peak revenue months (Nov, Dec): Driven by holidays and demand for high-value products.
+> **Strategy:** Launch targeted holiday campaigns, offer premium bundles, and ensure strong inventory planning.
+- Feb, May and June had low revenue. However, each month shows different purchasing patterns of customers: 
+  - Feb: This month had a small but highly loyal customer base that made frequent and high-value purchases.
+  - May: Sales came from a larger number of customers compared to Feb, but spending per purchase was smaller, and purchase frequency dropped.
+  - Jun: Large reach in terms of unique customers, but low engagement — many customers made only once or few purchases.
+but the purchase frequency is relatively high: Likely due to repeat purchases of low-priced items bought by a small to high customer number.
+> **Strategy:** Use volume discounts, product bundling, and cross-selling to boost average transaction value.
+### Product tiers performance
 - High-tier products dominate revenue but are heavily skewed toward year-end months.
 - Mid-tier products fluctuate, peaking in April; low-tier products remain stable but with low contribution.
 ### Product Category Insights
@@ -68,9 +78,7 @@ final_df.head()
 - Most profitable categories: Nest-USA, Apparel, Nest.
 - Least profitable categories: Waze, Housewares, Android.
 - Housewares category: low sales but high quantity sold → potential for premium positioning via limited editions or innovations.
-## Marketing Spend Impact
-- Certain months show a strong positive correlation between marketing spend and sales (particularly in peak seasons).
-- Off-season marketing spend is less effective unless targeted toward promotions or new product launches.
+
 # Recommendations
 ## Product Strategy
 - Focus on premium product programs for high-value items.
