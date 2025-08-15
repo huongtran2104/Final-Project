@@ -1,8 +1,9 @@
-# **Investigating business performance and determining factors to increase sales 💸**
+# **Optimizing Revenue by understanding the business performance 💸**
 ## 1. Project Overview:
 ### Introduction:
+The project investigates the performance of an e-commerce platforms under 3 factors sales, customers purchasing patterns, and discounts. The customers of this project is mainly B2B customers who want to buy supplies for their corporation's operational activities such as office supplies, clothes, building technologies,... The project's scope is to make EDA analysis to understand the sales performance 
 
-### Purposes:
+### Purposes & Outcomes:
 1. Analyze sales performance across product categories to uncover improvement opportunities.
 2. Determine factors that influence sales. 
 ### Outcomes:
@@ -80,6 +81,14 @@ final_df = pd.merge(merged_df, discount_df, on=['Product_Category', 'Month'], ho
 
 final_df.head()
 ```
+## 4. Exploratory Data Analysis
+The objective of this EDA is to uncover patterns, trends, and relationships within the sales data to support data-driven decision-making. By analyzing total sales performance, product tier distribution, and category-level profitability, I aim to identify growth opportunities and areas for improvement. The following findings were investigated to answer research questions:
+1. Which months have the highest/lowest sales?
+2. Are there any difference with the purchasing patterns in basket value and purchase frequency among low and high revenue months?
+3. Which product tiers contribute most to overall revenue, and how does their performance change over time?
+4. Which product categories generate the highest sales volume and profitability?
+5. Which are hero product categories of this platforms?
+6. Are there any redundant product categories that negatively influence the performance and need to be sacrificed?
 
 ## Key Findings
 ### Sales Trends & Seasonality
@@ -95,7 +104,7 @@ The revenue of the company fluctuated depending on the seasonal factors
 - High-tier products dominate revenue but are heavily skewed toward year-end months.
 - Mid-tier products fluctuate, peaking in April.
 - Low-tier products remain stable but with low contribution.
-- In April, both mid- and low-tier sales reach their annual peak, while high-tier sales are low.
+- In August, mid- and low-tier sales reach their annual peak, while high-tier sales are low. But overall, total sales in August still high compared to others.
 > **Problem:** Over-reliance on high-tier products. Sales could grow significantly by boosting all tiers.
 
 > **Job-to-be-Done:** Achieve balanced growth across tiers by identifying key products to prioritize and low-impact products to phase out.
@@ -104,7 +113,12 @@ The revenue of the company fluctuated depending on the seasonal factors
 - Lowest volume categories: Gift Cards, Housewares, Android.
 - Most profitable categories: Nest-USA, Apparel, Nest.
 - Least profitable categories: Waze, Housewares, Android.
+
+**Conclusion:**
+- Key product categories: Apparel, Nest-USA
+- Apparel: have high sales volume in mid year (From April to September). This can be explained by the high season of hiring. The B2B customers need to buy uniforms, clothes for their new employees. Therefore the sales  increased.
 - Housewares category: low sales but high quantity sold → potential for premium positioning via limited editions or innovations.
+- Android: this category have low performance in both sales and quantity volumes. 
 
 # Recommendations
 ## Product Strategies:
